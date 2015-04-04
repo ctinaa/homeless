@@ -1,0 +1,79 @@
+/* Responsive Full Background Image Using CSS
+ * Tutorial URL: http://sixrevisions.com/css/responsive-background-image/
+*/
+body {
+  /* Location of the image */
+  background-image: url(bg.jpg);
+  
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+     the content height is greater than the image height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(bg.jpg);
+  }
+	}
+h1 {
+  color: white; 
+  position: relative;
+  font-size: 60px;
+  top: 30%;
+  left: 40%;
+
+}
+
+h2 {
+  color: white; 
+  position: relative;
+  font-size: 30px;
+  top: 30%;
+  left: 40%;
+
+}
+
+*, *:before, *:after{ 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+} 
+.css-shapes-preview{ 
+    position: relative; 
+    height: 305px; 
+    width: 437px; 
+    background-color: #EBEBEB; 
+    border-radius: 12px; 
+    border-top: 0px transparent; 
+    border-left: 0px transparent; 
+    opacity: 0.5; 
+    position: relative;
+    left: 35%;
+    bottom: -250px;
+}
+
+.google-plus {
+  position: overflow; 
+  height: 500px;
+  width: 250px;
+
+}
